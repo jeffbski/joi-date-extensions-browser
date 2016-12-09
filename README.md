@@ -16,6 +16,8 @@ Namely we have an issue when trying to use the extension we get the following er
 
 You can reproduce the error using the example/with-ext by:
 ```bash
+npm install # main
+npm run prepublish # build dist
 cd example/with-ext
 npm install
 npm start # see console of browser that is started

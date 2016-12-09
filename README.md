@@ -202,5 +202,5 @@ An example project is available for testing
 ```bash
 cd examples/with-ext
 npm install
-npm start // builds and launches browser, see console messages
+npm start # builds and launches browser, see console messages
 ```

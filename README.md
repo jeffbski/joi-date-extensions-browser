@@ -167,6 +167,25 @@ const Joi = BaseJoi.extend(Extension);
 
 const schema = Joi.date().format('YYYY-MM-DD');
 
+## Config
+
+To use this in your probject along with `joi-browser` you would need to install both joi-browser and moment.
+
+```bash
+npm install joi-browser
+npm install moment
+npm install joi-date-extensions-browser
+```
+
+In your `package.json` you can add a `browser` property to tell webpack or browserify to use the alternate package for browser use.
+
+```json
+  "browser": {
+    "joi": "joi-browser",
+    "joi-date-extensions": "joi-date-extensions-browser"
+  },
+```
+
 ## Development
 
 ```bash

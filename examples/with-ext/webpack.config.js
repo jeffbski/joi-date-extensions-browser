@@ -9,18 +9,13 @@ var config = {
   },
   output: {
     path: __dirname + '/dist',
-    libary: '[name]',
+    library: '[name]',
     libraryTarget: 'umd',
     umdNamedDefine: true,
     filename: '[name].js'
   },
   module: {
     loaders: [
-      // {
-      //   test: /\.js$/,
-      //   exclude: /node_modules|dist/,
-      //   loaders: ['babel-loader']
-      // },
       { test: /\.json$/, loaders: ['json-loader'] }
     ]
   },
@@ -31,6 +26,7 @@ var config = {
     dns: 'empty'
   },
   resolve: {
+    root: __dirname,
     extensions: ['', '.json', '.js']
   },
   plugins: [

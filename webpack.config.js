@@ -5,7 +5,7 @@ const webpack = require('webpack');
 module.exports = {
   entry: './src/joi-date-extensions-browser.js',
   output: {
-    libary: 'JoiDateExtensions',
+    library: 'JoiDateExtensions',
     libraryTarget: 'umd',
     umdNamedDefine: true,
     path: __dirname + '/dist',
@@ -40,6 +40,13 @@ module.exports = {
     // english locale is included, exclude the rest
     // new webpack.IgnorePlugin(/locale/, /moment$/)
   ],
+  resolve: {
+    root: __dirname,
+    extensions: ['', '.json', '.js'],
+    alias: {
+      joi: 'joi-browser'
+    }
+  },
   externals: {
     "joi": "joi",
     "moment": "moment"

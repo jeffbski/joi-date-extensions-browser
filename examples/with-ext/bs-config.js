@@ -19,6 +19,7 @@ module.exports = {
   reloadDelay: 500,
   reloadDebounce: 500,
   files: [
+    'webpack.config.js',
     'public/*.html',
     'dist/*.js'
   ],

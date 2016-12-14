@@ -8,7 +8,11 @@ Since joi is using ES6 features, this package runs it through babel and webpack 
 
 See [joi-date-extensions](https://github.com/hapijs/joi-date-extensions) for documentation and to raise issues.
 
-## Note: still in beta - working through issue with use
+## Until the issue with building is resolved, you may use joi-full
+
+Until the issue with building is resolved, you may use [joi-full](https://github.com/jeffbski/joi-full) instead. It is a universal build which works in Node.js and in the browser using webpack/browserify. It includes the `joi-date-extensions` in it.
+
+## Note: still in beta - working through issue with building
 
 This project is still in beta and thus not yet published to npm.
 
